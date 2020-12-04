@@ -1,0 +1,107 @@
+footer {
+    background-image: url('../../img/footer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+   
+   
+
+    section {
+        padding-bottom: 75px;
+    }
+    h3,h4 {
+        padding-bottom: 10px;
+    }
+    table {
+        list-style: none;
+        color: $white;
+    }
+    p {
+        color: $white;
+        padding: 6px;
+    }
+    i{
+        padding: 6px;
+        padding-right: 15px;
+    }
+    .contact h4 {
+        padding-left: 11px;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+    a {
+        padding: 4px;
+    }
+    td {
+        padding-top: 5px;
+    }
+    .contact {
+        padding-right: 20vh;
+    }
+    .logo {
+        padding-left: 20vh;
+    }
+    .logo h3 {
+        padding-top: 10px;
+    }
+    .logo h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:$ipadpro){
+    footer {
+        height:30vh;
+        .contact {
+            padding-right: 10vh;
+        }
+        .logo {
+            padding-left: 10vh;
+        }
+    }
+}
+@media screen and (max-width:$ipad){
+    footer {
+        height:30vh;
+        .contact {
+            padding-right: 5vh;
+        }
+        .logo {
+            padding-left: 5vh;
+        }
+        section {
+            padding-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width:$iphone){
+    footer {
+        background: none;
+        background-color: $blue;
+        height:100vh;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+        .contact {
+            padding-right: 0;
+        }
+        .logo {
+            padding-left: 0;
+        }
+        section {
+            padding-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width:320px){
+    footer {
+        height:120vh;
+    }
+}

@@ -1,0 +1,142 @@
+header {
+    height:100vh;
+    background-image: url("../../img/wave.svg");
+    z-index : 0;
+    background-position: top 0 right 0;
+    background-repeat: no-repeat;
+
+    p {
+        color: $grey-dyeing-Dark;
+    }
+    nav{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+      
+        .logo{
+            display: flex;
+            align-items: flex-end;
+            text-align: center;
+            padding-top: 10px;
+        }
+        a{
+            padding: 10px;
+        }
+        .barNav {
+            margin-left: 11%;
+        }
+      
+    }
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 9%;
+        padding-top: 1%;
+        .leftDiv{
+            text-align: left;
+        }
+        p {
+            padding-bottom: 10px;
+        }
+    }
+    .mouse {
+        text-align: center;
+        img {
+            border-radius: 40px;
+            padding: 8px;
+            -webkit-box-shadow:$webkit;
+            -moz-box-shadow: $moz;
+            box-shadow: $box-shadow;
+        }
+    }
+    .logo-social-network{
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start center;
+        padding: 20px;
+        position:absolute;
+        top:48%;
+        left: 6%;
+        hr {
+            width: 25px;
+            height: 3px;
+            background-color: $blue;
+            transform: rotate(90deg);
+            border: none;
+        }
+        .insta {
+            padding-bottom: 10px;
+        }
+
+        h1, h2, p {
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media screen and (max-width:$ipadpro) {
+    header{
+        background-size: 55%;
+        height:52vh;
+        .rightDiv img{
+            width: 350px;
+            margin-top: 100px;
+        }
+        .logo-social-network{
+            top:18%;
+            left: 3%;
+        }
+    }
+}
+
+@media screen and (max-width:$ipad){
+    header{
+        background-size: 55%;
+        height:52vh;
+        .rightDiv img{
+            width: 250px;
+            margin-top: 45px;
+        }
+        .logo-social-network{
+            top:17%;
+        }
+    }
+}
+
+@media screen and (max-width:$iphone){
+    header{
+        background-size: 75%;
+        height:52vh;
+        .rightDiv img{
+            width: 150px;
+            // margin-top: 35px;
+        }
+        .logo-social-network{
+            top:17%;
+        }
+        .container {
+            flex-flow: column wrap;
+            margin-left: 0;
+            padding-top: 15%;
+            .leftDiv{
+                text-align: left;
+            }
+            p {
+                padding-bottom: 10px;
+            }
+        }
+        .mouse {
+            visibility: hidden;
+        }
+    }
+}
+@media screen and (max-width:320px){
+    header {
+        .logo-social-network{
+            visibility: hidden;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.biography {
+    display: flex;
+    justify-content: space-between;
+    background-image: url("../../img/background-we-are.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    img {
+        float: left;
+    }
+    article {
+        margin-right: 50vh;
+        padding-top: 50px;
+        p{
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:$ipadpro){
+    .biography{
+        img {
+            height: 500px;
+        }
+        article {
+            margin-right: 10vh;
+            margin-left: 40px;
+            p{
+                max-height: 20vh;
+                overflow: hidden;
+            }
+            button{
+                margin-top: 10px;
+            }
+        }
+    }
+}
+@media screen and (max-width:$ipad ){
+    .biography{
+        img {
+            height: 400px;
+        }
+        article {
+            p{
+                max-height: 14vh;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$iphone){
+    .biography{
+        flex-flow: column wrap;
+        margin-top: 200px;
+        align-items: center;
+        img {
+            height: 300px;
+            float: none;
+        }
+        article {
+            text-align: center;
+            p{
+                max-height: 10vh;
+            }
+        }
+    }
+}

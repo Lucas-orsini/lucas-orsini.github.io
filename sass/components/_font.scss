@@ -1,0 +1,176 @@
+// font-family: Dosis;
+// font-family: Poppins;
+// font-family: Lobster;
+// font-family: Lato;
+h1 {
+    font-family: $poppins;
+    font-size: $h1;
+    font-weight: bold;
+    
+    color: $grey;
+}
+
+h2 {
+    font-family: $poppins;
+    font-size: $h2;
+    font-weight: normal;
+    color: $grey;
+}
+
+
+h3 {
+    font-family: $Dosis;
+    font-size: $h3;
+    font-weight: lighter;
+}
+.title-pricing {
+    font-family: $lobster;
+    font-size: $h3-card-pricing;
+    font-weight: lighter;
+}
+
+h4 {
+    font-family: $lato ;
+    font-size: $h4;
+    color: $purple;
+    font-weight: lighter;
+}
+h5 {
+    font-family: $lobster;
+    font-size: $h3;
+    color: $purple;
+}
+
+h6 {
+    font-family: $poppins;
+    font-size:$h6;
+    font-weight: bold;
+}
+
+a {
+        text-decoration: none;
+        color:$white;
+        font-size: $link;
+        font-weight: medium;
+}
+
+p{
+    font-family: $poppins;
+    font-size: $p;
+    font-weight: lighter;
+    
+}
+.price {
+    font-size:$price-title;
+    color:$blue;
+    font-weight: bold;
+}
+
+button {
+    font-family: $poppins;
+    font-size: $p;
+    color:$white;
+    font-weight: medium;
+    text-transform: uppercase;
+    border:none;
+    border-radius: 20px;
+    background: $degrade;
+    padding: 10px;
+    width: 200px;
+    outline:none;
+}
+
+.footer-logo{
+    font-size:$price-title;
+    color:$white;
+    font-weight: bold;
+}
+
+i {
+    color: $white;
+}
+
+footer h2 {
+    font-family: $Dosis;
+    color: $white;
+}
+footer th,h4 {
+    font-family: $poppins;
+    color:$white;
+    font-weight: bold;
+}
+@media screen and (max-width:768px){
+    h1 {
+        font-size: $h1-resp;
+    }
+    
+    h2 {
+        font-size: $h2-resp;
+    }
+    
+    
+    h3 {
+        font-size: $h3-resp;
+    }
+    
+    h4 {
+        font-size: $h4-resp;
+    }
+    h5 {
+        font-size: $h3-resp;
+    }
+    
+    h6 {
+        font-size:$h6-resp;
+    }
+    
+    p{
+        font-size: $p-resp;
+    }
+    footer {
+        a {
+            font-size:$link-resp ;
+        }
+        p{
+            font-size:$p-resp
+        }
+    }
+}
+
+@media screen and (max-width:375px){
+    h1 {
+        font-size: $h1-mobile;
+    }
+    
+    h2 {
+        font-size: $h2-mobile;
+    }
+    
+    
+    h3 {
+        font-size: $h3-mobile;
+    }
+    
+    h4 {
+        font-size: $h4-mobile;
+    }
+    h5 {
+        font-size: $h3-mobile;
+    }
+    
+    h6 {
+        font-size:$h6-mobile;
+    }
+    
+    p{
+        font-size: $p-mobile;
+    }
+    footer {
+        a {
+            font-size:$link-mobile ;
+        }
+        p{
+            font-size:$p-mobile;
+        }
+    }
+}

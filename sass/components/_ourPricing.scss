@@ -1,0 +1,61 @@
+.our-pricing {
+    background-color:$purple-light;
+    text-align: center;
+    margin-bottom: 100px;
+
+    h5{
+        padding-top:50px;
+        margin-top:120px;
+    }
+    .container-pricing {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top:100px;
+        padding-bottom:100px;
+    }
+    .card {
+        background-color: $white;
+        border-radius: 40px;
+        padding: 40px;
+        -webkit-box-shadow:$webkit;
+        -moz-box-shadow: $moz;
+        box-shadow: $box-shadow;
+        max-width:424px;
+        h6 {
+           text-transform: uppercase;
+        }
+        p {
+            padding: 10px;
+            max-height: 11vh;
+            overflow: hidden;
+        }
+        h3,p,button {
+            margin-bottom: 40px;
+        }
+        .white-button {
+            border: 1px solid $blue;
+            background:$white;
+            color: $grey-dyeing-Dark;
+        }
+    }
+}
+
+@media screen and (max-width:$ipadpro){
+    .our-pricing{
+        .container-pricing{
+            flex-flow: column wrap;
+            .card{
+               margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$ipad){
+    .our-pricing{
+            .card{
+               max-width:300px;
+            }
+        }
+    }
